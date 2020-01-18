@@ -7,6 +7,7 @@
   "scripts": {
     "build:js": "node generate-module.js",
     "build:json": "markdown2code --lang yaml README.md | cson2json > device-size.json",
+    "postversion": "git push origin v${npm_package_version}; npm publish",
     "prebuild:js": "npm run build:json",
     "pretest": "npm run build:js",
     "test": "node test.js"

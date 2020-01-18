@@ -21,12 +21,6 @@ Package `device-size` provides both an ES module and a JSON, for instance using 
 
 ## Annotated Source
 
-*Device size* object starts here.
-
-```yaml
-{
-```
-
 ### Apple IPhone SE
 
 ```yaml
@@ -169,12 +163,6 @@ Package `device-size` provides both an ES module and a JSON, for instance using 
     device: 'Dell XPS'
     width: 1920
     height: 1080
-```
-
-*Device size* object ends here.
-
-```yaml
-}
 ```
 
 [MIT](http://g14n.info/mit-license)
