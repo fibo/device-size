@@ -1,0 +1,35 @@
+{
+  "name": "device-size",
+  "version": "0.1.0",
+  "description": "is a list of common devices and their viewports",
+  "type": "module",
+  "main": "device-size.js",
+  "scripts": {
+    "build:js": "node generate-module.js",
+    "build:json": "markdown2code --lang yaml README.md | cson2json > device-size.json",
+    "prebuild:js": "npm run build:json",
+    "pretest": "npm run build:js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/device-size.git"
+  },
+  "keywords": [
+    "device",
+    "devices",
+    "viewports",
+    "screen",
+    "size",
+    "size"
+  ],
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/device-size/issues"
+  },
+  "homepage": "https://github.com/fibo/device-size#readme"
+}
